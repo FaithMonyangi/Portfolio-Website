@@ -23,13 +23,10 @@ To view or work on this project locally:
    git clone https://github.com/your-username/portfolio-website.git
 
 ## Screenshots
-
-Include relevant screenshots of your website here to showcase the design and layout. You can add images like so:
-
-![Screenshot 1]("D:\PLP\PLP_ASSIGNMENTS\Hackathon1\screenshot1.png")
-![Screenshot 2]("D:\PLP\PLP_ASSIGNMENTS\Hackathon1\screenshot2.png")
-![Screenshot 2]("D:\PLP\PLP_ASSIGNMENTS\Hackathon1\screenshot3.png")
-![Screenshot 2]("D:\PLP\PLP_ASSIGNMENTS\Hackathon1\screenshot4.png")
+![Screenshot 1](https://github.com/FaithMonyangi/Portfolio-Website/blob/main/screenshot1.png)
+![Screenshot 2](https://github.com/FaithMonyangi/Portfolio-Website/blob/main/screenshot2.png)
+![Screenshot 2](https://github.com/FaithMonyangi/Portfolio-Website/blob/main/screenshot3.png)
+![Screenshot 2](https://github.com/FaithMonyangi/Portfolio-Website/blob/main/screenshot4.png)
 
 ## License
 
