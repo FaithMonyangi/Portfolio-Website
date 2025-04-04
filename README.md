@@ -1,4 +1,6 @@
 # Portfolio Website
+🌐 **Live Demo:** [Click here to view my portfolio](https://faithmonyangi.github.io/Portfolio-Website/)
+
 
 Welcome to my personal portfolio website, showcasing my work as a **Software Engineer** and **AI Enthusiast**. This website provides details about me, my skills, my projects, and how to get in touch.
 
@@ -21,6 +23,8 @@ To view or work on this project locally:
 1. **Clone** the repository to your local machine:
    ```bash
    git clone https://github.com/your-username/portfolio-website.git
+🌐 **Live Demo:** [Click here to view my portfolio](https://faithmonyangi.github.io/Portfolio-Website/)
+
 
 ## Screenshots
 ![Screenshot 1](https://github.com/FaithMonyangi/Portfolio-Website/blob/main/screenshot1.png)
