@@ -1,0 +1,421 @@
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color:#0e1321;
+    color: #F8F8FF;
+    line-height: 1.5;
+    font-size: 20px;
+    padding-top: 20px;
+}
+header{
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0e1321; 
+    z-index: 1000; 
+    padding: 20px 0;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+a{
+    text-decoration: none;
+    color: #6CCFF6;    
+}
+a:hover{
+    color: #00A9E0;
+}
+#about{
+    display: flex;
+    scroll-margin-top: 80px; 
+}
+.aboutme{
+    margin: 40px;
+    padding: 40px;
+}
+.typewriter {    
+    overflow: hidden; 
+    border-right: 2px solid;
+    white-space: nowrap;
+    width: 0;
+    display: inline-block;
+    animation: typing 3s steps(60) 0.5s forwards, blinkCaret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; } 
+}
+@keyframes blinkCaret {
+    0%, 100% {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #3498db; 
+    }
+}
+.Programming-languages{
+    color: white;
+}
+.lang-btn{
+    background-color: #00A9E0;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.lang-btn:hover{
+    background-color: black;
+    color: #00A9E0;
+    cursor: pointer;
+}
+img{
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px transparent;
+    border: 1.5px solid #6CCFF6;
+    width: 450px;
+    height: 450px;
+    margin: 40px;
+    object-fit: cover;
+    position: relative;
+    animation: borderAnimation 3s infinite linear;
+}
+
+.interest-container{
+    display: flex;
+    gap: 40px;
+    margin: auto;
+    max-width: 1100px;
+    padding: 20px;
+}
+.interest a {
+    font-style: italic;
+    text-decoration: none;
+    font-size: 18px; 
+}
+.interest{
+    margin: 10px;
+}
+#interests {
+    scroll-margin-top: 80px;
+}
+
+#projects {
+    text-align: center;
+    padding: 40px;
+    scroll-margin-top: 80px; 
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, auto);
+    gap: 30px; 
+    max-width: 1100px;
+    margin: auto;
+}
+.project {
+    border: 1px solid #000; 
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    background-color: #161b2b;
+}
+.project a{
+    color: #6CCFF6;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+    font-style: italic;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+h4 {
+    color: white;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+/* For Contact Section */
+#contact {
+    scroll-margin-top: 80px; 
+}
+/* Footer Styling */
+footer {
+    background-color: #161b2b; 
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Contact Section */
+.contact {
+    display: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 40px; 
+}
+
+.contact-info p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+.contact-info a{
+    color: #00A9E0;
+
+}
+.contact-info a:hover {
+    color: #6CCFF6; 
+}
+
+/* Social Media Icons */
+.socials {   
+    gap: 15px;
+}
+
+.socials a {
+    color: #6CCFF6;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.socials a:hover {
+    color: #00A9E0; 
+}
+
+/* Copyright Section */
+.copyright {
+    margin-top: 20px;
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+
+@media (max-width: 768px) {
+    header a {
+        margin: 5px 0; 
+        font-size: 16px; 
+    }
+
+    #about {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* Make the image appear first */
+    #about img {
+        order: -1;
+        width: 60%;
+        height: auto;
+        margin: 20px auto; margin-top: 100px;
+    }
+
+    .aboutme {
+        padding: 20px;
+        margin: 0;
+        text-align: center;
+    }
+
+    /* Make project items stack vertically */
+    .projects-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    /* Stack interests vertically */
+    .interest-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+    }
+
+    nav a {
+        margin: 0.5rem 0;
+        font-size: 1rem;
+    }
+
+    .section {
+        text-align: center;
+        padding: 1rem;
+    }
+
+    body {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    h1, h2, h3 {
+        font-size: calc(1em + 1vw);
+        text-align: center;
+    }
+    .cursor {
+        width: 1.25rem; 
+        height: 1.25rem;
+    }
+
+    .cursor .inner-dot {
+        width: 0.2rem; 
+        height: 0.2rem;
+    }
+
+        .cursor {
+            display: none; 
+        }
+}
+
+
+
+.cursor {
+    width: 3px; 
+    height: 3px; 
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%; 
+    position: fixed;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.1s ease-in-out;
+}
+
+.cursor::before {
+    content: '';
+    width: 30px; /* Outer circle size */
+    height: 30px; /* Outer circle size */
+    border: 1px solid rgba(255, 255, 255, 0.6); /* Light border */
+    border-radius: 50%; /* Circle shape */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Glowing effect */
+    animation: pulse 1.5s infinite ease-in-out; /* Add a pulse effect */
+    position: absolute;
+    pointer-events: none;
+}
+.cursor .inner-dot {
+    width: 2px; /* Adjust this size to make the inner dot smaller */
+    height: 2px; /* Adjust this size to make the inner dot smaller */
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    pointer-events: none;
+}
+/* Adjust for medium screens (850px to 1200px) */
+@media (max-width: 1200px) and (min-width: 850px) {
+    /* General padding and margins adjustments */
+    body {
+        font-size: 18px; /* Slightly smaller font size for medium screens */
+        padding: 20px; /* Ensure no excess padding around content */
+    }
+
+    /* Adjust Header */
+    header {
+        padding: 15px 20px; /* Moderate padding for header */
+        font-size: 20px;
+        flex-direction: row; /* Keep elements horizontal */
+        justify-content: space-between; /* Spread items out evenly */
+    }
+
+    /* About Section adjustments */
+    #about {
+        padding-top: 120px; /* Avoid overlap with fixed header */
+        margin-top: 20px; /* Optional margin adjustment */
+        display: flex;
+        flex-direction: row; /* Ensure about section items are in a row on medium screens */
+        justify-content: space-between; /* Space out image and text */
+        align-items: center; /* Align items vertically */
+    }
+
+    #about img {
+        width: 40%; /* Adjust image size on medium screens */
+        height: auto;
+        margin: 0 20px; /* Add margin for spacing */
+        border-radius: 50%;
+    }
+
+    .aboutme {
+        flex: 1; /* Allow text to take remaining space */
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    /* Projects Section */
+    .projects-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px; 
+        max-width: 100%; 
+        padding: 20px 0;
+    }
+
+    .projects-container .project {
+        padding: 20px;
+        margin: 0 auto; 
+        max-width: 100%; 
+        text-align: left;
+    }
+
+    /* Interest Section */
+    .interest-container {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .interest a {
+        font-size: 18px;
+    }
+
+    /* Adjust typography for h1, h2, h3 for better spacing */
+    h1, h2, h3 {
+        font-size: calc(1em + 1vw);
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}
+@media (min-width: 1200px) {
+    #about {
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 100px; 
+    }
+
+    #about img {
+        width: 35%;
+        height: auto;
+    }
+
+    .aboutme {
+        flex: 1;
+        padding: 20px;
+        text-align: left;
+        font-size: 18px;
+    }
+}
+
